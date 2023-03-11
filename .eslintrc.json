@@ -1,6 +1,6 @@
 {
-  "root": true,
   "parser": "@typescript-eslint/parser",
+  "root": true,
   "env": {
     "browser": true,
     "es2022": true,
@@ -28,9 +28,12 @@
     "no-use-before-define": "off",
     "no-shadow": "off",
     "no-nested-ternary": "off",
+		"import/no-cycle": "off",
     "import/no-extraneous-dependencies": "off",
+    "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"],
     "react/react-in-jsx-scope": "off", // "React" must be in scope when using JSX
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+		"react/display-name": "off"
     // "react-hooks/exhaustive-deps": ["warn", { additionalHooks: "useRecoilCallback" }], // for recoil
   }
 }
